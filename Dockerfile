@@ -29,4 +29,4 @@ COPY start.ps1 .
 
 # Define the entry point for the docker container.
 # This entry point starts the developer command prompt and launches the PowerShell shell.
-ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&","powershell.exe", ".\\start.ps1"]
+ENTRYPOINT ["powershell.exe", ".\\start.ps1"]
